@@ -324,7 +324,7 @@
                     function loadContent(e,id){
                         $("#header").find(".nav-link").parent().removeClass("active");
                         $(e.target).parent().addClass("active");
-                        $("#content").empty().html($("#"+id).html());
+                        $("#content").empty().html($("#"+id).clone().html());
                     }
                     $(document).ready(function(){
                         $("#content").html($("#home").html());
