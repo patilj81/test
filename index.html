@@ -1,599 +1,590 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-		<title>Shrimant foods</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
-        <link rel="shortcut icon" type="image/x-icon" href="title.png" />
-        
-        <style>
-            .carousel-inner img {
-                    display: block;
-                    margin-left: auto;
-                    margin-right: auto;
-                    width: 90%;
-            }
-            .navbar{
-               background-image: url(header_bg.png);
-                background-repeat: repeat-x; 
-            }
-            .carousel-indicators {
-                bottom:-50px;
-            }
-            .carousel-inner {
-                margin-bottom:50px;
-            }
-            
-            .list-items{
-                margin: 5px;
-            }
-            .nav-item .active{
-                font-weight: 700;
-            }
-            .nav-item :hover{
-                font-weight: 700;
-            }
-            .nav-item .nav-link{
-                -webkit-transition: .3s all ease;
-                -moz-transition: .3s all ease;
-                transition: .3s all ease;
-            }
-            .navbar-nav .active{
-                font-weight: 700;
-            }
-            body{
-                /*background: #eac78b;*/
-                background: url(wood.jpg) no-repeat center center fixed; 
-                  -webkit-background-size: cover;
-                  -moz-background-size: cover;
-                  -o-background-size: cover;
-                  background-size: cover;
-            }
-            .welcome{
-                margin-top: 10%;
-            }
-            .product-links li{
-                padding: 3px 0;
-                margin-left: 5px;
-                -webkit-transition: .3s all ease;
-                -moz-transition: .3s all ease;
-                transition: .3s all ease;
-            }
-            .product-links li:hover{
-                padding: 3px 0;
-                margin-left:10px;
-                font-weight:700;
-            }
-            .product-links li a i{
-                margin-right: 5px;
-            }
-            .product-links li:hover a i {
-                font-weight: 700;
-            }
-            .list{
-                margin-top: 10%;
-            }
-            .visible{
-                display: block;
-            }
-            .hidden{
-                display: none;
-            }
-            .product-item > img{
-                width: 60%;
-            }
-            .nav-link,.navbar-brand{
-                cursor: pointer;
-            }
-            .page-footer{
-                bottom: 0;
-                width: 100%;
-                padding-top: 90px !important;
-            }
-            section {
-                padding: 60px 0;
-            }
+<head>
+<title>Shrimant foods</title>
+<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="shortcut icon" type="image/x-icon" href="title.png" />
 
-            section .section-title {
-                text-align: center;
-                color: #007b5e;
-                margin-bottom: 50px;
-                text-transform: uppercase;
-            }
-            #footer {
-                background: #007b5e !important;
-            }
-            #footer h5{
-                padding-left: 10px;
-                border-left: 3px solid #eeeeee;
-                padding-bottom: 6px;
-                margin-bottom: 20px;
-                color:#ffffff;
-            }
-            #footer a {
-                color: #ffffff;
-                text-decoration: none !important;
-                background-color: transparent;
-                -webkit-text-decoration-skip: objects;
-            }
-            #footer ul.social li{
-                padding: 3px 0;
-            }
-            #footer ul.social li a i {
-                margin-right: 5px;
-                font-size:25px;
-                -webkit-transition: .5s all ease;
-                -moz-transition: .5s all ease;
-                transition: .5s all ease;
-            }
-            #footer ul.social li:hover a i {
-                font-size:30px;
-                margin-top:-10px;
-            }
-            #footer ul.social li a,
-            #footer ul.quick-links li a{
-                color:#ffffff;
-            }
-            #footer ul.social li a:hover{
-                color:#eeeeee;
-            }
-            #footer ul.quick-links li{
-                padding: 3px 0;
-                -webkit-transition: .5s all ease;
-                -moz-transition: .5s all ease;
-                transition: .5s all ease;
-            }
-            #footer ul.quick-links li:hover{
-                padding: 3px 0;
-                margin-left:5px;
-                font-weight:700;
-            }
-            #footer ul.quick-links li a i{
-                margin-right: 5px;
-            }
-            #footer ul.quick-links li:hover a i {
-                font-weight: 700;
-            }
-            .counter{
-                pointer-events: none;
-            }
-            @media (max-width:767px){
-                #footer h5 {
-                padding-left: 0;
-                border-left: transparent;
-                padding-bottom: 0px;
-                margin-bottom: 10px;
-            }
-            }
+    <style>
+.carousel-inner img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+.navbar{
+    background-image: url(header_bg.png);
+    background-repeat: repeat-x;
+}
+.carousel-indicators {
+    bottom:-50px;
+}
+.carousel-inner {
+    margin-bottom:50px;
+}
 
-        </style>
-	</head>
-        <body>
-            <div id="header">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-                    <div class="container" style="padding: 0;">
-                      <a class="navbar-brand" onClick="loadContent(event,'home')">
-                        <img src="logo.jpg" alt="Logo" style="width:215px;">
-                      </a>
-                        <div class="mx-auto order-0">
-                            <a class="navbar-brand mx-auto" onClick="loadContent(event,'home')" style="font-size: 1.8rem;font-family:'Gill Sans', sans-serif;color: #f19901;"> श्रीमंत.</a>
-                        </div>
-                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="collapsibleNavbar" style="font-family: "Gill Sans", sans-serif;">
-                        <ul class="navbar-nav ml-auto">
-                          <li class="nav-item active">
-                            <div class="nav-link" onClick="loadContent(event,'home')">Home</div>
-                          </li>
-                          <li class="nav-item">
-                            <div class="nav-link" id="productsLink" onClick="loadContent(event,'products')">Our Products</div>
-                          </li>
-                          <li class="nav-item">
-                            <div class="nav-link" onClick="loadContent(event,'aboutUs')">About Us</div>
-                          </li>
-                          <li class="nav-item">
-                            <div class="nav-link" onClick="loadContent(event,'contactUs')">Contact Us</div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                </nav>
-            </div>
-            <div id="content" class="col-md-12 col-sm-12 container" style="top:80px;width: 80%;">
-                
-            </div>
-            <div id="home" style="display: none;">
-                <div class="row">
-                    
-                    <div class="col-md-6 col-md-offset-6 col-sm-12">
-                    
-                            <div id="demo" class="carousel slide" data-ride="carousel" style="margin-top: 5px;">
+.list-items{
+    margin: 5px;
+}
+.nav-item .active{
+    font-weight: 700;
+}
+.nav-item :hover{
+    font-weight: 700;
+}
+.nav-item .nav-link{
+    -webkit-transition: .3s all ease;
+    -moz-transition: .3s all ease;
+    transition: .3s all ease;
+}
+.navbar-nav .active{
+    font-weight: 700;
+}
+body{
+    /*background: #eac78b;*/
+    background: url(wood.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.welcome{
+    margin-top: 10%;
+}
+.product-links li{
+    padding: 3px 0;
+    margin-left: 5px;
+    -webkit-transition: .3s all ease;
+    -moz-transition: .3s all ease;
+    transition: .3s all ease;
+}
+.product-links li:hover{
+    padding: 3px 0;
+    margin-left:10px;
+    font-weight:700;
+}
+.product-links li a i{
+    margin-right: 5px;
+}
+.product-links li:hover a i {
+    font-weight: 700;
+}
+.list{
+    margin-top: 10%;
+}
+.visible{
+    display: block;
+}
+.hidden{
+    display: none;
+}
+.product-item > img{
+    width: 60%;
+}
+.nav-link,.navbar-brand{
+    cursor: pointer;
+}
+.page-footer{
+    bottom: 0;
+    width: 100%;
+    padding-top: 90px !important;
+}
+section {
+    padding: 60px 0;
+}
 
-                                  <!-- Indicators -->
-                                  <ul class="carousel-indicators">
-                                    <li  data-slide-to="0" class="active"></li>
-                                    <li  data-slide-to="1"></li>
-                                    <li  data-slide-to="2"></li>
-                                    <li  data-slide-to="3"></li>
-                                    <li  data-slide-to="4"></li>
-                                  </ul>
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    background: #007b5e !important;
+}
+#footer h5{
+    padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+    padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+    font-size:25px;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+    font-size:30px;
+    margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+    color:#ffffff;
+}
+#footer ul.social li a:hover{
+    color:#eeeeee;
+}
+#footer ul.quick-links li{
+    padding: 3px 0;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+    padding: 3px 0;
+    margin-left:5px;
+    font-weight:700;
+}
+#footer ul.quick-links li a i{
+    margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+.counter{
+    pointer-events: none;
+}
+@media (max-width:767px){
+#footer h5 {
+        padding-left: 0;
+        border-left: transparent;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+    }
+}
 
-                                  <!-- The slideshow -->
-                                  <div class="carousel-inner" >
-                                    <div class="carousel-item active">
-                                      <img class="" src="CHOCOLATE%20CORN.png">
-                                        <div class="carousel-caption">
-                                            <!--<h3 style="color: black">CHOCOLATE CORN</h3>-->
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                      <img class="" src="CORN%20SPICY.png">
-                                        <div class="carousel-caption">
-                                            <!--<h3 style="color: black">CORN SPICY</h3>-->
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="" src="POHA%20CHOCOLATE.png">
-                                        <div class="carousel-caption">
-                                            <!--<h3 style="color: black">POHA CHOCOLATE</h3>-->
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                      <img class="" src="PUDINA.png">
-                                        <div class="carousel-caption">
-                                            <!--<h3 style="color: black">PUDINA</h3>-->
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                      <img class="" src="SCHWAN.png">
-                                        <div class="carousel-caption">
-                                            <!--<h3 style="color: black">SCHEZWAN SPICY</h3>-->
-                                        </div>
-                                    </div>
-                                  </div>
+</style>
+</head>
+<body>
+<div id="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container" style="padding: 0;">
+    <a class="navbar-brand" onClick="loadContent(event,'home')">
+    <img src="logo.jpg" alt="Logo" style="width:215px;">
+    </a>
+    <div class="mx-auto order-0">
+    <a class="navbar-brand mx-auto" onClick="loadContent(event,'home')" style="font-size: 1.8rem;font-family:'Gill Sans', sans-serif;color: #f19901;"> श्रीमंत.</a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar" style="font-family: "Gill Sans", sans-serif;">
+<ul class="navbar-nav ml-auto">
+    <li class="nav-item active">
+    <div class="nav-link" onClick="loadContent(event,'home')">Home</div>
+    </li>
+    <li class="nav-item">
+    <div class="nav-link" id="productsLink" onClick="loadContent(event,'products')">Our Products</div>
+</li>
+<li class="nav-item">
+    <div class="nav-link" onClick="loadContent(event,'aboutUs')">About Us</div>
+</li>
+<li class="nav-item">
+    <div class="nav-link" onClick="loadContent(event,'contactUs')">Contact Us</div>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</div>
+<div id="content" class="col-md-12 col-sm-12 container" style="top:80px;width: 80%;">
 
-                                  <!-- Left and right controls -->
-                                  <a class="carousel-control-prev" href="#demo" data-slide="prev" style="justify-content: left;">
-                                    <span class="carousel-control-prev-icon" ></span>
-                                  </a>
-                                  <a class="carousel-control-next" href="#demo" data-slide="next" style="left: 90%;">
-                                    <span class="carousel-control-next-icon"></span>
-                                  </a>
+    </div>
+    <div id="home" style="display: none;">
+    <div class="row">
 
-                            </div>
+    <div class="col-md-6 col-md-offset-6 col-sm-12">
 
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <div class="welcome col-sm-12">
-                                <h1>Welcome...</h1> 
-                                <p>We are happy to annouce that we have now about 600 distributers across maharashtra. We launched our first food product in January 2018,and now we sell 6 product across mahrashtra.</p> 
-                        </div>
-                        
-                         <div class="list">   
-                             <h1>Our Products</h1> 
-                                <ul class="list-unstyled  product-links" style="color: darkblue;">
-                                    <li onClick="loadProductDirect(event,'chocolateCorn')" ><i class="fa fa-angle-double-right"></i> CHOCOLATE CORN CHIWDA </li>
-                                    
-                                    <li onClick="loadProductDirect(event,'cornSpicy')"><i class="fa fa-angle-double-right"></i> CORN SPICY CHIWDA </li>
-                                    
-                                    <li onClick="loadProductDirect(event,'pohaChocolate')" ><i class="fa fa-angle-double-right"></i> POHA CHOCOLATE CHIWDA </li>
-                                    
-                                    <li onClick="loadProductDirect(event,'pudina')" ><i class="fa fa-angle-double-right"></i> PUDINA CHIWDA </li>
-                                    
-                                    <li onClick="loadProductDirect(event,'schezwan')" ><i class="fa fa-angle-double-right"></i> SCHEZWAN SPICY CHIWDA </li>
-                                </ul>
-                        </div>
-                    </div>
-                    
-                
-                </div>
-            </div>
-            <div id="products" style="display: none;">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12">
-                        <div class="row">
-                          <nav class="col-sm-3 col-md-4">
-                            <div class="navbar-brand" ><h2>Our Products<h2></div>
-                            <ul class="nav nav-tabs flex-column">
-                              <li class="nav-item">
-                                <div class="nav-link active" onclick="loadProduct(event,'chocolateCorn')" id="chocolateCornLink"> 
-                                    <i class="fa fa-angle-double-right"></i> Chocolate Corn Chwda</div>
-                              </li>
-                              <li class="nav-item">
-                                <div class="nav-link" onclick="loadProduct(event,'cornSpicy')" id="cornSpicyLink" >
-                                    <i class="fa fa-angle-double-right"></i> Corn Spicy Chiwda</div>
-                              </li>
-                              <li class="nav-item">
-                                <div class="nav-link" onclick="loadProduct(event,'pohaChocolate')" id="pohaChocolateLink" >
-                                    <i class="fa fa-angle-double-right"></i> Poha Chocolate Chiwda</div>
-                              </li>
-                              <li class="nav-item">
-                                <div class="nav-link" onclick="loadProduct(event,'pudina')" id="pudinaLink">
-                                    <i class="fa fa-angle-double-right"></i> Pudina Chiwda</div>
-                              </li>
-                              <li class="nav-item">
-                                <div class="nav-link" onclick="loadProduct(event,'schezwan')" id="schezwanLink">
-                                    <i class="fa fa-angle-double-right"></i> Schezwan Spicy Chiwda</div>
-                              </li>
-                            </ul>
-                                <hr>
-                          </nav>
-                          <div id="product-items"class="col-sm-9 col-md-8">
-                            <div id="chocolateCorn" class="product-item"> 
-                              <h1>Chocolate Corn</h1>
-                                <img  src="CHOCOLATE%20CORN.png">
-                                <p>Description...</p>
-                            </div> 
-                            <div id="cornSpicy" class="product-item hidden"> 
-                              <h1>Corn Spicy</h1>
-                                <img  src="CORN%20SPICY.png">
-                                <p>Description...</p>
-                            </div> 
-                            <div id="pohaChocolate" class="product-item hidden"> 
-                              <h1>Poha Chocolate</h1>
-                                <img  src="POHA%20CHOCOLATE.png">
-                                <p>Description...</p>
-                            </div> 
-                            <div id="pudina" class="product-item hidden"> 
-                              <h1>Pudina</h1>
-                                <img  src="PUDINA.png">
-                                <p>Description...</p>
-                            </div> 
-                            <div id="schezwan" class="product-item hidden"> 
-                              <h1>Schezwan Spicy</h1>
-                                <img  src="SCHWAN.png">
-                                <p>Description...</p>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                    
-                
-                </div>
-            </div>
-            <div id="aboutUs" style="display: none;">
-                <div class="row">
-                    <h1> About Us
-                    </h1>
-		</div>
-		<div class="row">
-                    <p style="text-align: justify;"> </p>
-                    <p style="text-align: justify;">We would love to hear your thoughts on this. Drop us an email at <a href="mailto:patilj81@gmail.com">shrimantfoods.com</a> or call us at + 91 1234564789</p>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="card" >
-                      <div class="card-body">
-                        <h4 class="card-title">Sandesh Jairange</h4>
-                        <p class="card-text">Head of Manufacture unit.</p>
-                        <p class="card-text">Contact : 99999999999</p>
-                        <p class="card-text">email : 99999999999@.com</p>
-                      </div>
-                    </div>
-                    <div class="card ml-auto">
-                      <div class="card-body">
-                        <h4 class="card-title">Prabhakar</h4>
-                        <p class="card-text">Head of Marketing unit.</p>
-                        <p class="card-text">Contact : 99999999999</p>
-                        <p class="card-text">email : 99999999999@.com</p>
-                      </div>
-                    </div>
-                </div>
-            </div>
-            <div id="contactUs" style="display: none;">
-                <div class="row">
-                    
-                    <div class="col-sm-12 col-md-6">
-                        <h1>Contact Us</h1>
-                        <hr>
-                        <h3> Business Enquiry 
-                        </h3>
-                        <p>Contact No. :- 999999999<br>
-                        Email : <a href="mailto:patilj81@gmail.com">customercare@shrimantFoods.com</a></p>
-                        <br>
-                        
-                        <h3> Address
-                        </h3>
-                        <p>Lane No1,Happy Colony,Kothrude,Pune </p>
-                        <h3> Map Location
-                        </h3>
-                        <div id="map" style="width:250px;height:200px;background:yellow"></div>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <h1>Enquiry</h1>
-                        <hr>
-                        <form>
-                            <div class="form-group row">
-                              <label for="example-text-input" class="col-md-2 col-sm-3 col-form-label">Name*</label>
-                              <div class="col-10">
-                                <input class="form-control" type="text" id="example-text-input" placeholder="Jignesh patil">
-                              </div>
-                            </div>
-                           <div class="form-group row">
-                              <label for="tel-input" class="col-md-2 col-sm-3 col-form-label">Phone*</label>
-                              <div class="col-10">
-                                <input class="form-control" type="tel" value="1-(555)-555-5555" id="tel-input">
-                              </div>
-                            </div>
-                        
-                            <div class="form-group row">
-                              <label for="adress-input" class="col-md-2 col-sm-3 col-form-label">Address*</label>
-                              <div class="col-10">
-                                <input class="form-control" type="text" id="adress-input" placeholder="address">
-                              </div>
-                            </div>
-                           <div class="form-group row">
-                            <label for="exampleInputEmail1" class="col-md-2 col-sm-3 col-form-label" >Email* </label>
-                            <div class="col-10">
-                               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                            </div>
-                          </div>
-                          <div class="form-group row">
-                                <label class="col-md-2 col-sm-3  col-form-label">Products</label>
-                                  <label class="col-md-1 col-sm-2 col-form-label"></label>
-                                <div class="col-8 col-md-offset-2">
-                                        <input class="form-check-input" type="checkbox" id="chocolateCorn"> Chocolate Corn <Br>
-                                        <input class="form-check-input" type="checkbox" id="cornSpicy"> Corn Spicy <Br>
-                                    <input class="form-check-input" type="checkbox" id="pohaChocolate"> Poha Chocolate <Br>
-                                    <input class="form-check-input" type="checkbox" id="pudina"> Pudina <Br>
-                                    <input class="form-check-input" type="checkbox" id="schezwan"> Schezwan Spicy
+    <div id="demo" class="carousel slide" data-ride="carousel" style="margin-top: 5px;">
 
-                                </div>
-                                
-                        </div>
-                              <div class="form-group row">
-                                      <label for="example-number-input" class="col-md-2 col-sm-3 col-form-label">Quantity*</label>
-                                      <div class="col-8">
-                                        <input class="form-control" type="number" value="42" id="example-number-input">
-                                      </div>Kg.
-                                </div>                      
-                          <button type="submit" class="btn btn-primary" onclick="sendEnquiry()">Enquire</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="page-footer font-small blue pt-4">
-                <section id="footer">
-                <div class="container">
-                    <div class="col-sm-12 counter" >
-                        <div class="float-right">
-                         <a href='http://www.freevisitorcounters.com'>freevisitorcounters's Website</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=4b609ee588798d9c1b0ceaa1724eab05e6b8f9a5'></script>
-                        <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/423128/t/7"></script>
-                            </div>
-                    </div>
-                    <div class="row text-center text-xs-center text-sm-left text-md-left">
-                        <div class="col-xs-12 col-sm-12 col-md-12">
-                            <h5>Quick links</h5>
-                            <ul class="list-unstyled list-inline quick-links">
-                                <li class="list-inline-item"><a onClick="loadContent(event,'home')"><i class="fa fa-angle-double-right"></i>Home</a></li> &nbsp;&nbsp;
-                                <li class="list-inline-item"><a onClick="loadContent(event,'products')"><i class="fa fa-angle-double-right"></i>Our Products</a></li> &nbsp; &nbsp;
-                                <li class="list-inline-item"><a onClick="loadContent(event,'aboutUs')"><i class="fa fa-angle-double-right"></i>About Us</a></li>&nbsp;&nbsp;
-                                <li class="list-inline-item"><a onClick="loadContent(event,'contactUs')"><i class="fa fa-angle-double-right"></i>Contact Us</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-12">
-                            <ul class="list-unstyled list-inline quick-links">
-                                        <li onClick="loadProductDirect(event,'chocolateCorn')" class="list-inline-item"><a>
-                                            <i class="fa fa-angle-double-right"></i>Chocolate Corn Chiwda </a></li>
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+    <li  data-slide-to="0" class="active"></li>
+    <li  data-slide-to="1"></li>
+    <li  data-slide-to="2"></li>
+    <li  data-slide-to="3"></li>
+    <li  data-slide-to="4"></li>
+    </ul>
 
-                                        <li onClick="loadProductDirect(event,'cornSpicy')" class="list-inline-item"><a>
-                                            <i class="fa fa-angle-double-right"></i>Corn Spicy Chiwda </a></li>
+    <!-- The slideshow -->
+<div class="carousel-inner" >
+    <div class="carousel-item active">
+    <img class="" src="CHOCOLATE%20CORN.png">
+    <div class="carousel-caption">
+    <!--<h3 style="color: black">CHOCOLATE CORN</h3>-->
+</div>
+</div>
+<div class="carousel-item">
+    <img class="" src="CORN%20SPICY.png">
+    <div class="carousel-caption">
+    <!--<h3 style="color: black">CORN SPICY</h3>-->
+</div>
+</div>
+<div class="carousel-item">
+    <img class="" src="POHA%20CHOCOLATE.png">
+    <div class="carousel-caption">
+    <!--<h3 style="color: black">POHA CHOCOLATE</h3>-->
+</div>
+</div>
+<div class="carousel-item">
+    <img class="" src="PUDINA.png">
+    <div class="carousel-caption">
+    <!--<h3 style="color: black">PUDINA</h3>-->
+    </div>
+    </div>
+    <div class="carousel-item">
+    <img class="" src="SCHWAN.png">
+    <div class="carousel-caption">
+    <!--<h3 style="color: black">SCHEZWAN SPICY</h3>-->
+</div>
+</div>
+</div>
 
-                                        <li onClick="loadProductDirect(event,'pohaChocolate')" class="list-inline-item"><a>
-                                            <i class="fa fa-angle-double-right"></i>Poha Chocolate Chiwda </a></li>
+<!-- Left and right controls -->
+<a class="carousel-control-prev" href="#demo" data-slide="prev" style="justify-content: left;">
+    <span class="carousel-control-prev-icon" ></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next" style="left: 90%;">
+    <span class="carousel-control-next-icon"></span>
+    </a>
 
-                                        <li onClick="loadProductDirect(event,'pudina')" class="list-inline-item"><a>
-                                            <i class="fa fa-angle-double-right"></i>Pudina Chiwda </a></li>
+    </div>
 
-                                        <li onClick="loadProductDirect(event,'schezwan')" class="list-inline-item"><a>
-                                            <i class="fa fa-angle-double-right"></i>Schezwan Spicy Chiwda </a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
-                            <ul class="list-unstyled list-inline social text-center">
-                                <li class="list-inline-item"><a href="https://www.facebook.com/patilj81"><i class="fa fa-facebook"></i></a></li>
-                                <li class="list-inline-item"><a href="https://www.facebook.com/patilj81"><i class="fa fa-twitter"></i></a></li>
-                                <li class="list-inline-item"><a href="https://www.facebook.com/patilj81"><i class="fa fa-instagram"></i></a></li>
-                            </ul>
-                        </div>
-                        </hr>
-                    </div>	
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-                            <p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="#" target="_blank">JP - Storm</a></p>
-                        </div>
-                        </hr>
-                    </div>	
-                    
-                </div>
-            </section>
+    </div>
+    <div class="col-md-6 col-sm-12">
+    <div class="welcome col-sm-12">
+    <h1>Welcome...</h1>
+    <p>We are happy to annouce that we have now about 600 distributers across maharashtra. We launched our first food product in January 2018,and now we sell 6 product across mahrashtra.</p>
+</div>
 
-            </div>
-              <!-- Footer -->
-            
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-            <script>
-                    function loadContent(e,id){
-                        $("#header").find(".nav-link").parent().removeClass("active");
-                        $(e.target).parent().addClass("active");
-                        $("#content").empty().html($("#"+id).html());
-                        if(id=="products"){
-                            loadProduct(event,'chocolateCorn',true);
-                        }
-                        $('.navbar-collapse').collapse('hide');
-                    }
-                    $(document).ready(function(){
-                        $("#content").html($("#home").html());
-                        initMap();
-                        setTimeout(function(){
-                           window.scrollTo(0, 0);
-                        }, 500);
-                        
-                    });
-                    function initMap() {
-                      // The location of Uluru
-                      var uluru = {lat: 18.495095649687034, lng: 73.81439208984376};
-                      // The map, centered at Uluru
-                      var map = new google.maps.Map(
-                          document.getElementById('map'), {zoom: 4, center: uluru});
-                      // The marker, positioned at Uluru
-                      var marker = new google.maps.Marker({position: uluru, map: map});
-                    }
-                    function loadProduct(e,id,flag){
-                        $("#content").find(".nav-link").removeClass("active");
-                        if(!flag){
-                            $(e.target).addClass("active");
-                        }
-                        $('.product-item').addClass("hidden");
-                        $("#"+id).removeClass("hidden");
-                    }
-                    function loadProductDirect(e,id){
-                        $("#content").empty().html($("#products").html());
-                        $("#content").find(".nav-link").removeClass("active");
-                        $("#content").find("#"+id+"Link").addClass("active");
-                        $('.product-item').addClass("hidden");
-                        $("#"+id).removeClass("hidden");
-                        $("#header").find(".nav-link").parent().removeClass("active");
-                        $('#productsLink').parent().addClass("active");
-                    }
-                    function sendEnquiry(){
-						var newLine= "\n";
-                        var message = "hi,"+newLine+" I am "+$("#example-text-input").val()+","+$("#tel-input").val()+","+$("#adress-input").val()+","+$("#exampleInputEmail1").val()+ newLine+"  I want " + getSelectedProducts() + " of " + $("#example-number-input").val() + "kg quantity."+newLine+"  Thanks,"+newLine+$("#example-text-input").val()+","+$("#tel-input").val()+","+$("#adress-input").val()+","+$("#exampleInputEmail1").val();
-                         var email = 'patilj81@gmail.com';
-				var subject = 'Shrimant foods enquiry';
-                        window.open('mailto:' + email + '?subject=' + subject + '&body=' +   message);
-                    }
-                    function getSelectedProducts(){
-                        var string ="";
-                        if($("#chocolateCorn").prop('checked')){
-                            string += "Chocolate Corn Chiwda,"
-                        }
-                        if($("#cornSpicy").prop('checked')){
-                            string += "Corn Spicy Chiwda,"
-                        }
-                        if($("#pohaChocolate").prop('checked')){
-                            string += "Poha Chocolate Chiwda,"
-                        }
-                        if($("#pudina").prop('checked')){
-                            string += "Pudina Chiwda,"
-                        }
-                        if($("#schezwan").prop('checked')){
-                            string += "Schezwan Chiwda,"
-                        }
-                        return string;
-                    }
-            </script>
-            <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeZ7XWjlIGhEf52z4UsUZPjctgFd7LZDY&callback=initMap">
-            </script>
-        </body>
+<div class="list">
+    <h1>Our Products</h1>
+<ul class="list-unstyled  product-links" style="color: darkblue;">
+    <li onClick="loadProductDirect(event,'chocolateCorn')" ><i class="fa fa-angle-double-right"></i> CHOCOLATE CORN CHIWDA </li>
+
+<li onClick="loadProductDirect(event,'cornSpicy')"><i class="fa fa-angle-double-right"></i> CORN SPICY CHIWDA </li>
+
+<li onClick="loadProductDirect(event,'pohaChocolate')" ><i class="fa fa-angle-double-right"></i> POHA CHOCOLATE CHIWDA </li>
+
+<li onClick="loadProductDirect(event,'pudina')" ><i class="fa fa-angle-double-right"></i> PUDINA CHIWDA </li>
+
+<li onClick="loadProductDirect(event,'schezwan')" ><i class="fa fa-angle-double-right"></i> SCHEZWAN SPICY CHIWDA </li>
+</ul>
+</div>
+</div>
+
+
+</div>
+</div>
+<div id="products" style="display: none;">
+    <div class="row">
+    <div class="col-md-12 col-sm-12">
+    <div class="row">
+    <nav class="col-sm-3 col-md-4">
+    <div class="navbar-brand" ><h2>Our Products<h2></div>
+<ul class="nav nav-tabs flex-column">
+    <li class="nav-item">
+    <div class="nav-link active" onclick="loadProduct(event,'chocolateCorn')" id="chocolateCornLink">
+    <i class="fa fa-angle-double-right"></i> Chocolate Corn Chwda</div>
+</li>
+<li class="nav-item">
+    <div class="nav-link" onclick="loadProduct(event,'cornSpicy')" id="cornSpicyLink" >
+    <i class="fa fa-angle-double-right"></i> Corn Spicy Chiwda</div>
+</li>
+<li class="nav-item">
+    <div class="nav-link" onclick="loadProduct(event,'pohaChocolate')" id="pohaChocolateLink" >
+    <i class="fa fa-angle-double-right"></i> Poha Chocolate Chiwda</div>
+</li>
+<li class="nav-item">
+    <div class="nav-link" onclick="loadProduct(event,'pudina')" id="pudinaLink">
+    <i class="fa fa-angle-double-right"></i> Pudina Chiwda</div>
+</li>
+<li class="nav-item">
+    <div class="nav-link" onclick="loadProduct(event,'schezwan')" id="schezwanLink">
+    <i class="fa fa-angle-double-right"></i> Schezwan Spicy Chiwda</div>
+</li>
+</ul>
+<hr>
+</nav>
+<div id="product-items"class="col-sm-9 col-md-8">
+    <div id="chocolateCorn" class="product-item">
+    <h1>Chocolate Corn</h1>
+<img  src="CHOCOLATE%20CORN.png">
+    <p>Description...</p>
+    </div>
+    <div id="cornSpicy" class="product-item hidden">
+    <h1>Corn Spicy</h1>
+<img  src="CORN%20SPICY.png">
+    <p>Description...</p>
+    </div>
+    <div id="pohaChocolate" class="product-item hidden">
+    <h1>Poha Chocolate</h1>
+<img  src="POHA%20CHOCOLATE.png">
+    <p>Description...</p>
+    </div>
+    <div id="pudina" class="product-item hidden">
+    <h1>Pudina</h1>
+    <img  src="PUDINA.png">
+    <p>Description...</p>
+    </div>
+    <div id="schezwan" class="product-item hidden">
+    <h1>Schezwan Spicy</h1>
+<img  src="SCHWAN.png">
+    <p>Description...</p>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+    </div>
+    </div>
+    <div id="aboutUs" style="display: none;">
+    <div class="row">
+    <h1> About Us
+</h1>
+</div>
+<div class="row">
+    <p style="text-align: justify;"> </p>
+    <p style="text-align: justify;">We would love to hear your thoughts on this. Drop us an email at <a href="mailto:patilj81@gmail.com">shrimantfoods.com</a> or call us at + 91 1234564789</p>
+</div>
+<hr>
+<div class="row">
+    <div class="card" >
+    <div class="card-body">
+    <h4 class="card-title">Sandesh Jairange</h4>
+<p class="card-text">Head of Manufacture unit.</p>
+<p class="card-text">Contact : 99999999999</p>
+<p class="card-text">email : 99999999999@.com</p>
+</div>
+</div>
+<div class="card ml-auto">
+    <div class="card-body">
+    <h4 class="card-title">Prabhakar</h4>
+    <p class="card-text">Head of Marketing unit.</p>
+<p class="card-text">Contact : 99999999999</p>
+<p class="card-text">email : 99999999999@.com</p>
+</div>
+</div>
+</div>
+</div>
+<div id="contactUs" style="display: none;">
+    <div class="row">
+
+    <div class="col-sm-12 col-md-6">
+    <h1>Contact Us</h1>
+<hr>
+<h3> Business Enquiry
+</h3>
+<p>Contact No. :- 999999999<br>
+Email : <a href="mailto:patilj81@gmail.com">customercare@shrimantFoods.com</a></p>
+<br>
+
+<h3> Address
+</h3>
+<p>Lane No1,Happy Colony,Kothrude,Pune </p>
+<h3> Map Location
+</h3>
+<div id="map" style="width:250px;height:200px;background:yellow">
+    <iframe width="250" height="200" frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=500&cp=18.4852765559108~73.80874338215152&lvl=17&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
+    </iframe> 
+    </div>
+    <div class="col-sm-12 col-md-6">
+    <h1>Enquiry</h1>
+    <hr>
+    <form>
+    <div class="form-group row">
+    <label for="example-text-input" class="col-md-2 col-sm-3 col-form-label">Name*</label>
+    <div class="col-10">
+    <input class="form-control" type="text" id="example-text-input" placeholder="Jignesh patil">
+    </div>
+    </div>
+    <div class="form-group row">
+    <label for="tel-input" class="col-md-2 col-sm-3 col-form-label">Phone*</label>
+    <div class="col-10">
+    <input class="form-control" type="tel" value="1-(555)-555-5555" id="tel-input">
+    </div>
+    </div>
+
+    <div class="form-group row">
+    <label for="adress-input" class="col-md-2 col-sm-3 col-form-label">Address*</label>
+    <div class="col-10">
+    <input class="form-control" type="text" id="adress-input" placeholder="address">
+    </div>
+    </div>
+    <div class="form-group row">
+    <label for="exampleInputEmail1" class="col-md-2 col-sm-3 col-form-label" >Email* </label>
+    <div class="col-10">
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    </div>
+    </div>
+    <div class="form-group row">
+    <label class="col-md-2 col-sm-3  col-form-label">Products</label>
+    <label class="col-md-1 col-sm-2 col-form-label"></label>
+    <div class="col-8 col-md-offset-2">
+    <input class="form-check-input" type="checkbox" id="chocolateCorn"> Chocolate Corn <Br>
+<input class="form-check-input" type="checkbox" id="cornSpicy"> Corn Spicy <Br>
+<input class="form-check-input" type="checkbox" id="pohaChocolate"> Poha Chocolate <Br>
+<input class="form-check-input" type="checkbox" id="pudina"> Pudina <Br>
+    <input class="form-check-input" type="checkbox" id="schezwan"> Schezwan Spicy
+
+</div>
+
+</div>
+<div class="form-group row">
+    <label for="example-number-input" class="col-md-2 col-sm-3 col-form-label">Quantity*</label>
+    <div class="col-8">
+    <input class="form-control" type="number" value="42" id="example-number-input">
+    </div>Kg.
+    </div>
+    <button type="submit" class="btn btn-primary" onclick="sendEnquiry()">Enquire</button>
+    </form>
+    </div>
+    </div>
+    </div>
+
+    <div class="page-footer font-small blue pt-4">
+    <section id="footer">
+    <div class="container">
+    <div class="col-sm-12 counter" >
+    <div class="float-right">
+    <a href='http://www.freevisitorcounters.com'>freevisitorcounters's Website</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=4b609ee588798d9c1b0ceaa1724eab05e6b8f9a5'></script>
+    <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/423128/t/7"></script>
+    </div>
+    </div>
+    <div class="row text-center text-xs-center text-sm-left text-md-left">
+    <div class="col-xs-12 col-sm-12 col-md-12">
+    <h5>Quick links</h5>
+<ul class="list-unstyled list-inline quick-links">
+    <li class="list-inline-item"><a onClick="loadContent(event,'home')"><i class="fa fa-angle-double-right"></i>Home</a></li> &nbsp;&nbsp;
+<li class="list-inline-item"><a onClick="loadContent(event,'products')"><i class="fa fa-angle-double-right"></i>Our Products</a></li> &nbsp; &nbsp;
+<li class="list-inline-item"><a onClick="loadContent(event,'aboutUs')"><i class="fa fa-angle-double-right"></i>About Us</a></li>&nbsp;&nbsp;
+<li class="list-inline-item"><a onClick="loadContent(event,'contactUs')"><i class="fa fa-angle-double-right"></i>Contact Us</a></li>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-12">
+    <ul class="list-unstyled list-inline quick-links">
+    <li onClick="loadProductDirect(event,'chocolateCorn')" class="list-inline-item"><a>
+    <i class="fa fa-angle-double-right"></i>Chocolate Corn Chiwda </a></li>
+
+<li onClick="loadProductDirect(event,'cornSpicy')" class="list-inline-item"><a>
+    <i class="fa fa-angle-double-right"></i>Corn Spicy Chiwda </a></li>
+
+<li onClick="loadProductDirect(event,'pohaChocolate')" class="list-inline-item"><a>
+    <i class="fa fa-angle-double-right"></i>Poha Chocolate Chiwda </a></li>
+
+<li onClick="loadProductDirect(event,'pudina')" class="list-inline-item"><a>
+    <i class="fa fa-angle-double-right"></i>Pudina Chiwda </a></li>
+
+<li onClick="loadProductDirect(event,'schezwan')" class="list-inline-item"><a>
+    <i class="fa fa-angle-double-right"></i>Schezwan Spicy Chiwda </a></li>
+</ul>
+</div>
+</div>
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+    <ul class="list-unstyled list-inline social text-center">
+    <li class="list-inline-item"><a href="https://www.facebook.com/patilj81"><i class="fa fa-facebook"></i></a></li>
+    <li class="list-inline-item"><a href="https://www.facebook.com/patilj81"><i class="fa fa-twitter"></i></a></li>
+    <li class="list-inline-item"><a href="https://www.facebook.com/patilj81"><i class="fa fa-instagram"></i></a></li>
+    </ul>
+    </div>
+    </hr>
+    </div>
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+    <p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="#" target="_blank">JP - Storm</a></p>
+    </div>
+    </hr>
+    </div>
+
+    </div>
+    </section>
+
+    </div>
+    <!-- Footer -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+    function loadContent(e,id){
+        $("#header").find(".nav-link").parent().removeClass("active");
+        $(e.target).parent().addClass("active");
+        $("#content").empty().html($("#"+id).html());
+        if(id=="products"){
+            loadProduct(event,'chocolateCorn',true);
+        }
+        $('.navbar-collapse').collapse('hide');
+    }
+$(document).ready(function(){
+    $("#content").html($("#home").html());
+    setTimeout(function(){
+        window.scrollTo(0, 0);
+    }, 500);
+
+});
+
+function loadProduct(e,id,flag){
+    $("#content").find(".nav-link").removeClass("active");
+    if(!flag){
+        $(e.target).addClass("active");
+    }
+    $('.product-item').addClass("hidden");
+    $("#"+id).removeClass("hidden");
+}
+function loadProductDirect(e,id){
+    $("#content").empty().html($("#products").html());
+    $("#content").find(".nav-link").removeClass("active");
+    $("#content").find("#"+id+"Link").addClass("active");
+    $('.product-item').addClass("hidden");
+    $("#"+id).removeClass("hidden");
+    $("#header").find(".nav-link").parent().removeClass("active");
+    $('#productsLink').parent().addClass("active");
+}
+function sendEnquiry(){
+    var newLine= "\n";
+    var message = "hi,"+newLine+" I am "+$("#example-text-input").val()+","+$("#tel-input").val()+","+$("#adress-input").val()+","+$("#exampleInputEmail1").val()+ newLine+"  I want " + getSelectedProducts() + " of " + $("#example-number-input").val() + "kg quantity."+newLine+"  Thanks,"+newLine+$("#example-text-input").val()+","+$("#tel-input").val()+","+$("#adress-input").val()+","+$("#exampleInputEmail1").val();
+    var email = 'patilj81@gmail.com';
+    var subject = 'Shrimant foods enquiry';
+    window.open('mailto:' + email + '?subject=' + subject + '&body=' +   message);
+}
+function getSelectedProducts(){
+    var string ="";
+    if($("#chocolateCorn").prop('checked')){
+        string += "Chocolate Corn Chiwda,"
+    }
+    if($("#cornSpicy").prop('checked')){
+        string += "Corn Spicy Chiwda,"
+    }
+    if($("#pohaChocolate").prop('checked')){
+        string += "Poha Chocolate Chiwda,"
+    }
+    if($("#pudina").prop('checked')){
+        string += "Pudina Chiwda,"
+    }
+    if($("#schezwan").prop('checked')){
+        string += "Schezwan Chiwda,"
+    }
+    return string;
+}
+</script>
+
+</body>
 
 </html>
