@@ -565,7 +565,9 @@
                         $('#productsLink').parent().addClass("active");
                     }
                     function sendEnquiry(){
-                        var message = "hi,\r\n I am "+$("#example-text-input").val()+","+$("#tel-input").val()+","+$("#adress-input").val()+","+$("#exampleInputEmail1").val()+ ".\r\n  I want " + getSelectedProducts() + " of " + $("#example-number-input").val() + "kg quantity.\r\n  Thanks,\r\n " + +$("#example-text-input").val()+","+$("#tel-input").val()+","+$("#adress-input").val()+","+$("#exampleInputEmail1").val();
+						var newLine= "
+						";
+                        var message = "hi,"+newLine+" I am "+$("#example-text-input").val()+","+$("#tel-input").val()+","+$("#adress-input").val()+","+$("#exampleInputEmail1").val()+ ".+newLine+"  I want " + getSelectedProducts() + " of " + $("#example-number-input").val() + "kg quantity."+newLine+"  Thanks,"+newLine+ +$("#example-text-input").val()+","+$("#tel-input").val()+","+$("#adress-input").val()+","+$("#exampleInputEmail1").val();
                          var email = 'patilj81@gmail.com';
 				var subject = 'Shrimant foods enquiry';
                         window.open('mailto:' + email + '?subject=' + subject + '&body=' +   message);
