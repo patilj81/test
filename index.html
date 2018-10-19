@@ -568,7 +568,7 @@
                         var message = "hi,\n I am "+$("#example-text-input").val()+","+$("#tel-input").val()+","+$("#adress-input").val()+","+$("#exampleInputEmail1").val()+ ". I want" + getSelectedProducts() + " of " + $("#example-number-input").val() + "kg quantity.\n thanks,\n" + +$("#example-text-input").val()+","+$("#tel-input").val()+","+$("#adress-input").val()+","+$("#exampleInputEmail1").val();
                          var email = 'patilj81@gmail.com';
                         var subject = 'Shrimant foods enquiry';
-                        window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   message;
+                        window.open('mailto:' + email + '?subject=' + subject + '&body=' +   message);
                     }
                     function getSelectedProducts(){
                         var string ="";
