@@ -542,6 +542,7 @@
                             loadProduct(event,'chocolateCorn',true);
                         }
                         $('.navbar-collapse').collapse('hide');
+						window.scrollTo(0, 0);
                     }
                     $(document).ready(function(){
                         $("#content").html($("#home").html());
@@ -559,6 +560,7 @@
                         }
                         $('.product-item').addClass("hidden");
                         $("#"+id).removeClass("hidden");
+						window.scrollTo(0, 0);
                     }
                     function loadProductDirect(e,id){
                         $("#content").empty().html($("#products").html());
@@ -568,6 +570,7 @@
                         $("#"+id).removeClass("hidden");
                         $("#header").find(".nav-link").parent().removeClass("active");
                         $('#productsLink').parent().addClass("active");
+						window.scrollTo(0, 0);
                     }
                     function sendEnquiry(){
 						var newLine= "\n";
