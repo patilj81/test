@@ -1,0 +1,73 @@
+
+Dear Jignesh,
+
+
+
+As discussed , Please work on the assignments mentioned below, 
+
+
+
+#Assignment 1
+
+ 
+
+Create an Angular application that has the following areas. You may use any CSS like bootstrap to make the pages look nice.
+
+Form to create a new Person
+The form should have fields for name, email, dob, avatar and country
+List of Persons
+On this page show the Name, Email, Avatar and Age (not date of birth) of the person. To show the age, you should create a pipe.
+Clicking on the name of any person should open the form to edit the details
+Show the list in a "card" format rather than a simple list. (CardView should be a custom component with input parameters).
+Note : You do not need to create any API. The API is already created. The details are available here - https://documenter.getpostman.com/view/3129705/RWTpsGbZ
+
+ 
+
+ 
+
+#Assignment 2
+
+ 
+
+ 
+
+Spring boot assignment:
+
+ 
+
+Create following api using Spring boot and spring boot data jpa with in memory database –
+ https://documenter.getpostman.com/view/3129705/RWTpsGbZ
+
+Create unit test cases for Controllers, services and repositories.
+Use Java version 13
+Once done revert back to us.
+
+Awaiting for your response to proceed further.
+
+
+
+Regards, 
+
+Arunadhevi.RC
+
+Senior Recruitment Associate
+
+Seventh Contact Hiring Solutions
+
+Pune - 411014
+
+Contact No.- 8956259079
+
+Email : arunadhevi.rc@seventh-contact.com
+
+Website : www.seventhcontact.com
+
+Latest updates for jobs visit : http://jobs.seventhcontact.com/
+
+ 
+
+PS: We do not charge any fees from Candidates.(Our services are free for Job Seekers)
+
+Disclaimer:- In case any candidate receives any unsolicited or fraudulent communication regarding a job offer or an interview call against payment of money, please stay alert and recognize it as a scam
+
+
